@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: #FFF;
+  background-color: #ef822b;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.userMessage {
+  text-align: right;
+  padding: 10px;
+  background-color: #ecf0f6;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.opponentMessage {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.messageText {
+  display: inline-block;
+  max-width: 80%;
+  word-wrap: break-word;
+  background-color: #ffe598;
+  padding: 5px 5px 5px 5px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+.userText {
+  display: inline-block;
+  max-width: 80%;
+  word-wrap: break-word;
+  background-color: #8eb7f4;
+  padding: 5px 5px 5px 5px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #888888;
+  color: #eeeeee;
+}
+
+.messageTime {
+  color: grey;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+
+.statusBox {
+  text-align: center;
+  color: grey;
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.form {
+  margin: 0; padding: 0; 
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+}
+
+.input {
+  margin: 0; padding: 0; box-sizing: border-box;
+  border: 0;
+  padding: 10px;
+  width: 80%;
+  margin: 0.5%;
+  font-size: 1.3em;
+  outline: none;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+
+.button {
+  margin: 0; padding: 0; box-sizing: border-box;
+  width: 19%;
+  background: #8eb7f4;
+  border: none;
+  padding: 10px;
+  color: #eeeeee;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.messageList {
+  margin-bottom: 100px;
+}
