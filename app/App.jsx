@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import StartGameForm from './components/StartGameForm.jsx';
+import AppHeader from './components/AppHeader.jsx';
 import MessageList from './components/MessageList.jsx';
+import StartGameForm from './components/StartGameForm.jsx';
 
 import styles from './App.css';
 
@@ -118,7 +119,7 @@ class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-        <div className={styles.heading}>Game of Three</div>
+        <AppHeader title = "Game of Three" />
         <MessageList messagelist = {this.state.messages} />
         <StartGameForm onMessageSubmit = {this.gameStart} />
       </div>
