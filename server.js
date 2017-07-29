@@ -4,18 +4,12 @@ const webpack = require('webpack');
 const webpackMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const config = require('./webpack.config.js');
-
-var fs = require('fs');
-var util = require('util');
-
 const port = 666;
 const app = express();
-
-var server = require('http').Server(app);
-
+const server = require('http').Server(app);
 const io = require('socket.io').listen(server);
-
 const compiler = webpack(config);
+
 const middleware = webpackMiddleware(compiler, {
   publicPath: config.output.publicPath,
   contentBase: 'src',
@@ -43,11 +37,10 @@ server.listen(port, '0.0.0.0', function onStart(err) {
   console.info('==> Listening on port %s. Open up http://0.0.0.0:%s/ in your browser.', port, port);
 });
 
-var userId = 1;
-var userCount = 0;
+let userId = 1;
+let userCount = 0;
 
 io.on('connection', function(socket){
-
   socket.on('user:request', function(msg) {
     userCount++;
     socket.emit('user:accept', { id : userId, users : userCount });
@@ -63,5 +56,4 @@ io.on('connection', function(socket){
     socket.broadcast.emit('user:left', msg);
     userCount--;
   })
-
 });

@@ -26,16 +26,16 @@ export default class StartGameForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.submit} className={styles.form} >
+      <form onSubmit={this.submit} className={styles.sendForm} >
         <input type="number"
                min="4"
                value={this.state.text}
                onChange={this.change}
-               className={styles.input}
+               className={styles.numberInput}
                placeholder="Type your number"
                required
         />
-        <input type="submit" value="Start" className={styles.button} />
+        <input type="submit" value="Start" className={styles.sendButton} />
       </form>
     );
   }

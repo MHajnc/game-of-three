@@ -18,6 +18,10 @@ body {
   padding: 10px;
 }
 
+.messageList {
+  margin-bottom: 100px;
+}
+
 .userMessage {
   text-align: right;
   padding: 10px;
@@ -41,7 +45,7 @@ body {
   padding: 5px 5px 5px 5px;
   font-size: 1.3em;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px #888888;
+  box-shadow: 1px 1px 1px #888;
 }
 
 .userText {
@@ -52,8 +56,8 @@ body {
   padding: 5px 5px 5px 5px;
   font-size: 1.3em;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px #888888;
-  color: #eeeeee;
+  box-shadow: 1px 1px 1px #888;
+  color: #EEE;
 }
 
 .messageTime {
@@ -70,40 +74,39 @@ body {
   margin-top: 10px;
 }
 
-.form {
-  margin: 0; padding: 0; 
+.sendForm {
+  margin: 0;
+  padding: 0; 
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
   width: 100%;
   max-width: 600px;
   margin: auto;
-  background-color: white;
+  background-color: #FFF;
 }
 
-.input {
-  margin: 0; padding: 0; box-sizing: border-box;
+.numberInput {
+  margin: 0;
+  box-sizing: border-box;
   border: 0;
   padding: 10px;
   width: 80%;
-  margin: 0.5%;
   font-size: 1.3em;
   outline: none;
-  background-color: #eeeeee;
+  background-color: #EEE;
   border-radius: 5px;
 }
 
-.button {
-  margin: 0; padding: 0; box-sizing: border-box;
+.sendButton {
+  margin: 0;
+  padding: 10px;
   width: 19%;
+  margin-left: 1%;
+  box-sizing: border-box;
   background: #8eb7f4;
   border: none;
-  padding: 10px;
-  color: #eeeeee;
+  color: #EEE;
   font-size: 1.3em;
   border-radius: 5px;
-}
-
-.messageList {
-  margin-bottom: 100px;
 }
